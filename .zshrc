@@ -127,8 +127,10 @@ bindkey  '^[[B'   history-substring-search-down
 
 alias config="$(which git) --git-dir=\$HOME/.cfg/ --work-tree=\$HOME"
 
-# Created by `pipx` on 2022-01-03 05:09:52
 export PATH="$PATH:/Users/bazzilic/.local/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
