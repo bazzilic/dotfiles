@@ -78,8 +78,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker rustup history-substring-search zsh-syntax-highlighting)
-#                                 ^---------------------^----------------- this two must be last and in this order
+plugins=(docker rustup zsh-cargo-completion history-substring-search zsh-syntax-highlighting)
+#                                                    ^---------------------^----------------- this two must be last and in this order
 
 source $ZSH/oh-my-zsh.sh
 
@@ -133,7 +133,6 @@ export PATH="$PATH:/Users/bazzilic/.local/bin:/Users/bazzilic/.dotnet/tools"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(pip3 completion --zsh)"
 
 if type brew &>/dev/null
 then
@@ -145,3 +144,10 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+DROPBOX='/Users/bazzilic/Library/CloudStorage/Dropbox'
+PROJECTS="$DROPBOX/Projects"
+ANOMA="$PROJECTS/Anoma"
+alias dropbox="cd $DROPBOX"
+alias anoma="cd $ANOMA"
+alias proj="cd $PROJECTS"
