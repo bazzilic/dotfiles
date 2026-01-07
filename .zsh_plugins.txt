@@ -1,0 +1,10 @@
+zsh-users/zsh-completions
+
+ohmyzsh/ohmyzsh path:plugins/history-substring-search
+ohmyzsh/ohmyzsh path:plugins/alias-finder
+MichaelAquilina/zsh-you-should-use
+
+zsh-users/zsh-autosuggestions
+Aloxaf/fzf-tab
+
+zdharma-continuum/fast-syntax-highlighting
